@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veterinária Bichinho Feliz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Veterinária Bichinho Feliz</h1>
+
+        <div class="form-container">
+            <label for="nome">Nome do Pet:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="gravidade">Gravidade:</label>
+            <select id="gravidade" name="gravidade">
+                <option value="1">Leve</option>
+                <option value="2">Média</option>
+                <option value="3">Grave</option>
+                <option value="4">Gravíssima</option>
+            </select>
+
+            <button onclick="adicionarPet()">Cadastrar Pet</button>
+        </div>
+
+        <div class="tabelas-container">
+            <div class="tabela">
+                <h2>Lista de Pets</h2>
+                <table id="tabelaPets">
+                    <tr>
+                        <th>SENHA</th>
+                        <th>NOME</th>
+                        <th>GRAVIDADE</th>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="tabela">
+                <h2>Lista de Atendimento (Ordenada por Gravidade)</h2>
+                <table id="tabelaPetsOrdenada">
+                    <tr>
+                        <th>SENHA</th>
+                        <th>NOME</th>
+                        <th>GRAVIDADE</th>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-container">
+        <footer>
+            <p>&copy; 2024 Veterinária Bichinho Feliz. Todos os direitos reservados.</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
